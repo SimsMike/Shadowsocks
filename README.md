@@ -36,9 +36,9 @@
 做完上面的步骤就可以启动ss服务了
 
 ```shell
-> ssserver -c /etc/shadowsocks/config.json #直接启动
-> ssserver -c /etc/shadowsocks/config.json -d start #后台运行
-> ssserver -c /etc/shadowsocks/config.json -d stop #停止服务
+> ssserver -c /etc/shadowsocks.json #直接启动
+> ssserver -c /etc/shadowsocks.json -d start #后台运行
+> ssserver -c /etc/shadowsocks.json -d stop #停止服务
 > tail -f /var/log/shadowsocks.log #查看ss日志
 ```
 
