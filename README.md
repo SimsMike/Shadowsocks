@@ -99,7 +99,15 @@
   service shadowsocks start #启动shadowsocks服务
 ```
 
-## 6.参考
+## 6.最后要开启防火墙端口!最后要开启防火墙端口!最后要开启防火墙端口!(重要的事情说三遍)
+
+```shell
+  # 端口号是你自己设置的端口
+  $ firewall-cmd --permanent --zone=public --add-port=443/tcp
+  $ firewall-cmd --reload #重启防火墙生效
+```
+
+## 7.参考
 
 [在CENTOS 7上搭建Shadowsocks图文教程](https://www.4spaces.org/install-shadowsocks-on-centos-7/)
 
@@ -110,6 +118,8 @@
 [shadowsocks安装配置及系统服务脚本](https://blog.51cto.com/dyc2005/1942307)
 
 [chkconfig命令](https://www.cnblogs.com/qmfsun/p/3847459.html)
+
+[Vultr搭建ShadowSocks教程](https://my.oschina.net/u/1167564/blog/851680)
 
 
 ## 结束!
